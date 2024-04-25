@@ -1,4 +1,4 @@
-#second assignment
+#Second assignment
 import random
 
 # The computer "thinks" a about a whole number betwee 1 and 20:
