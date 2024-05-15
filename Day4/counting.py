@@ -14,9 +14,9 @@ def count_lines(filename):
 
 def count_words(filename):
     with open(filename, 'r') as file:
-    text = file.read()
-    words = text.split()
-    return len(words)
+        text = file.read()
+        words = text.split()
+        return len(words)
   
 # Defining a main function that checks for errors and uses the above 3 functions:
 def main():
