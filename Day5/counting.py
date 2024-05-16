@@ -2,6 +2,8 @@
 
 import sys
 
+from functions_for_counting import count_characters, count_lines, count_words
+
 def main():
     if len(sys.argv) != 2:
         print("Usage: python counting.py <filename>")
