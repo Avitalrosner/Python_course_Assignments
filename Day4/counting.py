@@ -1,3 +1,4 @@
+#version that reads the file 3 times, less efficient.
 import sys
 
 # I'm defining 3 function for counting the charactors, lines and words:
