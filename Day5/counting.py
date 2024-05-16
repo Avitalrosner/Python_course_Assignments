@@ -1,17 +1,7 @@
-#version that reads the file once - more efficiant.
+#version that conteins only main, the functions are imported.
+
 import sys
 
-# Defining the functions - counting characters, lines, and words:
-def count_characters(text):
-    return sum(1 for character in text if character != ' ')
-
-def count_lines(text):
-    return text.count('\n') + 1
-
-def count_words(text):
-    return len(text.split())
-
-# Defining the main function:
 def main():
     if len(sys.argv) != 2:
         print("Usage: python counting.py <filename>")
