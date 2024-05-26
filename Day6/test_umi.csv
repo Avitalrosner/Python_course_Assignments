@@ -1,0 +1,4 @@
+patient,cancer,sum_of_umis
+1,CRC,10000
+2,GIST,1000
+3,PDAC,100
