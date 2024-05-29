@@ -11,7 +11,7 @@ def calculate_log10(data, column_name):
     return data
 
 if __name__ == "__main__":
-    file_path = "C:/python/Python_course_Assignments/Day6/umi.csv"
+    file_path = "umi.csv"
     data = load_data(file_path)
     data = calculate_log10(data, 'sum_of_umis')
     print(data)
