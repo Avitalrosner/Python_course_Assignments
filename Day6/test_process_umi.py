@@ -7,7 +7,7 @@ from process_umi import load_data, calculate_log10
 class TestProcessUmi(unittest.TestCase):
 
     def setUp(self):
-        self.file_path = 'C:/python/Python_course_Assignments/Day6/test_umi.csv'
+        self.file_path = 'test_umi.csv'
         self.data = load_data(self.file_path)
 
     def test_load_data(self):
