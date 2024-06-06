@@ -3,9 +3,9 @@ import os
 import csv
 import datetime
 from Bio import Entrez, SeqIO
+Entrez.email = "avitalrosner@gmail.com"
 
 def download_data(search_term, num_items):
-    Entrez.email = "avitalrosner@gmail.com"  
     handle = Entrez.esearch(db="nucleotide", term=search_term, retmax=num_items)
     record = Entrez.read(handle)
     handle.close()
@@ -47,19 +47,15 @@ def main():
         sys.exit(1)
 
     try:
-        # Download data
         id_list, total_found = download_data(search_term, num_items)
 
-        # Save metadata
         current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print("date,term,max,total")
         print(f"{current_date},{search_term},{num_items},{total_found}")
         save_metadata(current_date, search_term, num_items, total_found)
 
-        # Fetch and save data
         filenames = fetch_and_save_data(id_list, search_term)
 
-        # Print filenames
         print("Files saved:")
         for filename in filenames:
             print(filename)
