@@ -8,9 +8,9 @@ The code can find the longest repeated sub-sequence, and also calculate the GC c
 
 ## Running the code:
 To run the code, for a file named biology.fasta:
-
+```
 python analyze.py biology.fasta --duplicate --gc_content
-
+```
 
 ## Requirements
 - Python 3.x
@@ -19,6 +19,6 @@ python analyze.py biology.fasta --duplicate --gc_content
 ## Installation:
 Install the required packages using pip:
 
-```sh
+```
 pip install -r requirements.txt
-
+```
