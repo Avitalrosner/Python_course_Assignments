@@ -10,9 +10,9 @@ In biology, high gc content usually indicates a higher level of stability for th
 [More info can be found here](https://en.wikipedia.org/wiki/GC-content)
 
 ## Running the code:
-To run the code, for a file named biology.fasta:
+To run the code, for a file named actin.fasta:
 ```
-python analyze.py biology.fasta --duplicate --gc_content
+python analyze.py actin.fasta --duplicate --gc_content
 ```
 
 ## Requirements
