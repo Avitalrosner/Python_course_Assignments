@@ -25,8 +25,3 @@ Install the required packages using pip:
 ```
 pip install -r requirements.txt
 ```
-<<<<<<< HEAD
-
-
-=======
->>>>>>> f3425e12da151d6c8fb65fcb273d1fbbf45977e8
