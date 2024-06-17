@@ -14,6 +14,9 @@ To run the code, for a file named actin.fasta:
 ```
 python analyze.py actin.fasta --duplicate --gc_content
 ```
+The output will be:
+Longest repeated subsequence: TGTTGTTG (Length: 8)
+GC content: 52.92%
 
 ## Requirements
 - Python 3.x
